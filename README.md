@@ -17,6 +17,7 @@ My goal for this repository is to create a starter kit of tools and documentatio
 ### logactivity.sh ###
 
 Author: Sean Cronin
+
 Prerequisites: zenity (On Ubuntu: sudo apt-get install zenity)
 
 * Interval can be customized by changing the INTERVAL variable at the top of the script. The interval is in seconds.
