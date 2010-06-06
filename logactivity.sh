@@ -1,7 +1,9 @@
 #!/bin/bash
 
-INTERVAL=120
-LOGFILE=/home/sean/temp/activity.csv
+# Interval at which the dialog is displayed in seconds.
+INTERVAL=300
+# Where the logfile is stored
+LOGFILE=~/activity.csv
 
 while [ 1 ]
 do
@@ -10,8 +12,6 @@ do
   # If no text is entered, don't log it
   if [ "$TASK" == "" ];
     then
-      echo "STOP"
-      #sleep $INTERVAL
       continue
   fi
   echo "$TIMESTAMP $TASK" >> $LOGFILE
